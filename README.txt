@@ -1,100 +1,107 @@
-This project is for want to make myself a web application 
-or something on my local machine that allows me to create 
-disposable phone numbers and email addresses so that
-I can get in contact with people regardless of
-what type of service or platform they use.
-
+This project is to make myself a web application 
+that allows me to create disposable phone numbers and email addresses so that
+I can get in contact with people regardless of what type of service or platform they use.
 
 Creating a web application on your local machine to manage 
 disposable phone numbers and email addresses is a substantial 
 project that involves several technical components. 
-Here's a simplified step-by-step guide to help you get started:
 
+- Use an Open-Source Messaging Library:
+  - Look for open-source libraries or frameworks that can help me implement messaging features. This will save me time and effort.
+- Handle Messaging Logic: Writing code to manage the sending and receiving of messages. Ensure that my messages are encrypted for privacy.
+- Generate Temporary Phone Numbers: Researching virtual phone number services that offer APIs or methods to obtain temporary or disposable phone numbers for my use.
+- Implement User Authentication: Develop a secure authentication system to protect my messaging system from unauthorized access.
+- Prioritize Security: Implement encryption and security best practices to protect my messages and data.
+- Documenting my Work: Keep detailed documentation of my code and configurations for future reference.
+
+
+Python and Go Microservices:
+I can use Python for certain components of my messaging system and Go for others
+For example, I can use Python for:
+- user authentication
+- managing the database
+- or building a web-based user interface.
+Meanwhile, Go can handle messaging server and the core messaging functionality, such as 
+- message encryption
+- real-time messaging
+- and handling network connections; APIs and Communication:
+
+Develop clear APIs (Application Programming Interfaces) to allow the Python and Go components to communicate with each other.
+Ensure proper data serialization and deserialization to pass information between the two languages.
+Containerization or Orchestration:
+
+Considering containerization technologies like Docker and orchestration tools like Kubernetes if my Python and Go components run in separate containers.
+
+Testing and Debugging:
+Be prepared to test and debug both parts of your system separately and together to ensure smooth integration.
+Maintainability:
+
+------Here's a simplified step-by-step guide to help me get started:-------
 
 Choose a Technology Stack:
-Select a technology stack for your web application. Since 
-you mentioned Python and Go, you can use either of them, 
-along with web frameworks like Flask or Gin for backend 
-development.
+- Will be using Flask for backend development.
+- VS code as my editor
+- Git and github as my version control
 
 Database Setup:
-Set up a database to store user account information, 
+Setting up a database to store user account information, 
 including disposable phone numbers and email addresses. 
-You can use a relational database like SQLite or PostgreSQL 
-for this purpose.
+- Will be using PostgreSQL
 
 User Registration and Authentication:
 Implement a user registration and authentication system. 
 Users should be able to create accounts and log in securely.
+- Technically I will be the only user 
 
 Generate Disposable Phone Numbers and Email Addresses:
-Create functionality to generate and manage disposable phone 
-numbers and email addresses. This may involve generating random
-phone numbers and email addresses or using a service that 
-provides this feature.
+- Will create a functionality to generate and manage disposable phone 
+numbers and email addresses.
 
 Messaging Functionality:
-Implement a messaging system that allows you to send and receive 
+- Implementting a messaging system that allows me to send and receive 
 messages using the disposable phone numbers and email addresses 
-you've generated.
+I've generated.
 
 User Interface:
-Develop a user-friendly web interface for managing your disposable 
+- I will be develop a user-friendly web interface for managing my disposable 
 contacts, creating new ones, and sending messages.
-Security and Privacy:
-
-Focus on security measures, including encryption of messages, 
-secure storage of user data, and protecting user privacy.
 
 Testing:
-Thoroughly test your web application to ensure that it works 
+- Thoroughly test my web application to ensure that it works 
 as expected and is secure.
-Deployment (Optional):
 
-If you want to access your web application remotely or from 
-other devices, consider deploying it to a server. 
-This would involve hosting, domain setup, and security 
-configurations.
+Deployment (Optional):
+- I want to access my web application remotely or from 
+other devices, so i'll consider deploying it to a server. This would involve hosting, 
+domain setup, and security configurations.
 
 Backup and Maintenance:
-Regularly back up your data and maintain the application to
+Regularly back up my data and maintain the application to
 address any security vulnerabilities or issues.
-Keep in 
 
 
-Environment Setup:
-Choose a programming language and web framework.
-Set up a development environment with the necessary tools.
+----- Messaging Logic ------
+Handling messaging logic involves implementing the core functionality of your messaging system. 
+This includes the processes that enable users to send and receive messages securely.
 
-2. User Registration and Authentication:
-Implement user registration and login functionality.
+Here are some key components you'll need to consider when handling messaging logic:
 
-3. Database Setup:
-Create a database to store user account information.
+- User Contacts:
+  - I will have the numbers of external contacts saved with the ability to add names to it
+- Develop the functionality for users to send text or media messages to each other.
+- Implement a notification system to inform users about new messages or other events.
+- Decide how message history will be managed and archived, which can be important for user experience.
 
-4. Generate Disposable Contacts:
-Develop a feature to generate disposable phone numbers 
-and email addresses.
+- Message Delivery Confirmation:
+  - I want to implement a mechanism to confirm that messages have been delivered and read by the recipient.
+To handle these aspects of messaging logic, I'll likely need a combination of programming languages, libraries, and frameworks. 
+The specific technologies I use will depend on my project's requirements. 
 
-5. Messaging Functionality:
-Implement a basic messaging system for sending and 
-receiving messages using the disposable contacts.
+Some popular choices for messaging systems include:
 
-6. User Interface:
-Create a user-friendly web interface for managing 
-disposable contacts and sending messages.
-
-7. Security and Privacy:
-Focus on security measures, including message encryption, 
-secure user data storage, and privacy protection.
-
-8. Testing:
-Thoroughly test your application to ensure it functions 
-correctly and is secure.
-
-9. Local Deployment (Optional):
-Set up a local web server to run your application.
-
-10. Backup and Maintenance:
-Establish backup and maintenance procedures to keep 
-your application secure and functional over time.
+Flask Python: I can use Python for user authentication, database interactions, and building a web-based user interface.
+Go (Golang): Go is well-suited for real-time messaging and handling network communications. Will be used for message encryption, real-time messaging, and server-side logic.
+Databases - PostgreSQ: Will eed a database systemL to store user data, contacts, and messages.
+Messaging Libraries: Depending on the messaging protocols I choose, I may need libraries to help with message encryption and communication. For example, I can use encryption libraries like OpenPGP or secure messaging protocols like XMPP.
+Web Sockets: To enable real-time communication, consider using WebSocket libraries like "github.com/gorilla/websocket" for Go or "websockets" for Python.
+Django Python: User Interface Frameworks: To plan to build a web-based user interface for frontend
