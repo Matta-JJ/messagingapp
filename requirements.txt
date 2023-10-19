@@ -1,0 +1,2 @@
+Creating a requirements.txt file to list the Python packages and libraries needed for my project. 
+I can generate this file using pip freeze > requirements.txt once I've installed the necessary packages.
