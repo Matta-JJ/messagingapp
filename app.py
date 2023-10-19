@@ -1,3 +1,6 @@
+'''app.py: This is my main application file where I define my Flask app and routes.'''
+
+
 from flask import Flask 
 
 app = Flask(__name__)
