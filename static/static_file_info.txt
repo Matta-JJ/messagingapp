@@ -1,0 +1,2 @@
+Create a directory (e.g., "static") 
+to store static files such as CSS, JavaScript (if needed), and images.

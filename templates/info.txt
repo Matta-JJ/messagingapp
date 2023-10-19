@@ -1,0 +1,4 @@
+Creating a directory ("templates") to store your HTML templates. 
+I need HTML templates for my application's web pages. 
+Flask uses the Jinja2 template engine,
+ so I can include dynamic content in my HTML.
