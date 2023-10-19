@@ -124,4 +124,30 @@ Go (Golang): Go is well-suited for real-time messaging and handling network comm
 Databases - PostgreSQ: Will eed a database systemL to store user data, contacts, and messages.
 Messaging Libraries: Depending on the messaging protocols I choose, I may need libraries to help with message encryption and communication. For example, I can use encryption libraries like OpenPGP or secure messaging protocols like XMPP.
 Web Sockets: To enable real-time communication, consider using WebSocket libraries like "github.com/gorilla/websocket" for Go or "websockets" for Python.
-Django Python: User Interface Frameworks: To plan to build a web-based user interface for frontend
+
+
+Project Directory:
+Creating a directory for my project. Nameing it "messagingapp."
+Creating a requirements.txt file to list the Python packages and libraries needed for my project. 
+I can generate this file using pip freeze > requirements.txt once I've installed the necessary packages.
+
+App Files:
+Creating Python files for my Flask application;
+app.py: This is my main application file where I define my Flask app and routes.
+models.py (database): Define the data models for my application since I am using a database like PostgreSQL.
+config.py: Store configuration settings for my application.
+
+HTML Templates:
+Creating a directory ("templates") to store your HTML templates. 
+I need HTML templates for my application's web pages. Flask uses the Jinja2 template engine, so I can include dynamic content in my HTML.
+
+Static Files:
+Create a directory (e.g., "static") to store static files such as CSS, JavaScript (if needed), and images.
+
+Database Configuration (using PostgreSQL):
+Using PostgreSQL, I may need to set up database configuration files and migrations. 
+The specific files and directories for database setup depend on the database library I am using (psycopg2 for PostgreSQL).
+
+Additional Configuration:
+create a .flaskenv file to store environment variables for my application. This can include Flask-specific configurations, database URLs, and other environment variables.
+I plan to write unit tests for my application, createing a "tests" directory and include test files.
