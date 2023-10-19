@@ -6,6 +6,26 @@ Creating a web application on your local machine to manage
 disposable phone numbers and email addresses is a substantial 
 project that involves several technical components. 
 
+
+Back-End:
+Programming Language: Python - Continue using Python for the back-end.
+Web Framework: Flask - Stick with Flask for building the back-end, as it's lightweight and suitable for your use case.
+Database: PostgreSQL - Use PostgreSQL as your database for data storage.
+Database Library: You'll need a Python library to work with PostgreSQL. The psycopg2 library is commonly used for this purpose.
+
+Front-End:
+HTML/CSS: Create a basic user interface using HTML and CSS. Without JavaScript, your interface may be more static, but it can still be functional.
+
+Server Hosting:
+Server: Host your application on a server. Platforms like Heroku, which support Flask and PostgreSQL, can be a good choice.
+
+Database Setup:
+Database Configuration: Set up your PostgreSQL database, including tables for managing disposable phone numbers and email addresses.
+
+Security:
+User Authentication: Implement basic user authentication to access your service.
+
+Anonymity and Privacy: Ensure that your service is designed with privacy and anonymity in mind, as you are the sole user.
 - Use an Open-Source Messaging Library:
   - Look for open-source libraries or frameworks that can help me implement messaging features. This will save me time and effort.
 - Handle Messaging Logic: Writing code to manage the sending and receiving of messages. Ensure that my messages are encrypted for privacy.
